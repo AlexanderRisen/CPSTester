@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/cursorimg.png">
+    <title>CPS / Test</title>
+</head>
+<body>
+    
+    <div class="background"></div>
+
+    <div class="main" id="mainid">
+
+        <div class="main-page" id="main-pageid">
+
+            <span class="welcome-text">
+            
+                <h1 class="welcome-title">WELCOME!</h1>
+                <h3 class="welcome-subtitle">CPS test online</h3>
+                
+                <nav class="contacts">
+    
+                    <img src="images/discord.png" class="discord">
+                    <img src="images/insta.png" class="insta">
+                    <img src="images/telegram.png" class="telegram">
+                    <img src="images/vk.png" class="vk">
+    
+                </nav>
+    
+            </span>
+
+        </div>
+        
+         <div class="click-page">
+
+            <span class="click-text" id="clck-text">
+
+                <h1 class="click-title">CHOOSE</h1>
+                <h3 class="click-subtitle">How many Seconds do You need</h3>
+
+                <div class="seconds">
+                    <button class="seconds-choice" id="tensec" onclick="tensecfunc()">10 seconds</button>
+                    <button class="seconds-choice" id="thirtysec" onclick="thirtysecfunc()">30 seconds</button>
+                    <button class="seconds-choice" id="onemin" onclick="oneminfunc()">1 minute</button>
+                </div>
+
+            </span>
+
+
+            <div class="pre-test" id="pretestid">
+                <h1 class="pre-timer" id="pretimerid">3</h1>
+            </div>
+
+            <div class="test" id="testid">
+
+                <span class="click-timer" id="click-timerid">0 sec</span>
+
+                <span class="amount-clicks" id="countclcks">0 Clicks</span>
+
+                <button class="click-pad" id="clk-pad" onclick="clickcount(this)">
+                    <h1 class="pad-text">CLICK!!!</h1>
+                </button>
+
+                <button id="reload-btn" class="reload" onclick="reloadfunc()">Reload</button>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
